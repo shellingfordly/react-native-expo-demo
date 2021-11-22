@@ -1,6 +1,6 @@
 # Expo Demo
 
-[中文](https://github.com/anncwb/vue-vben-admin)|[English](https://github.com/anncwb/vue-vben-admin/blob/main/README.zh-CN.md)
+中文|[English](https://github.com/shellingfordly/react-native-expo-demo/blob/main/README_EN.md)
 
 这是一个为了学习 Expo 而做的诗歌软件，它只是一个 Demo
 

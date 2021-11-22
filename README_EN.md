@@ -1,6 +1,6 @@
 # Expo Demo
 
-[中文](https://github.com/anncwb/vue-vben-admin)|[English](https://github.com/anncwb/vue-vben-admin/blob/main/README_EN.md)
+[中文](https://github.com/shellingfordly/react-native-expo-demo)|[English]
 
 This is application of peotry for learning expo purposes, it's just a demo.
 
