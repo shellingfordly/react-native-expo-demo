@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  AppOutline,
-  UnorderedListOutline,
-  UserOutline,
-} from "antd-mobile-icons";
+import { AppOutline, UserOutline } from "antd-mobile-icons";
 import { TabBar } from "antd-mobile";
 
 export default function LayoutNavBar({ route, navigation }) {
@@ -16,11 +12,6 @@ export default function LayoutNavBar({ route, navigation }) {
       name: "Home",
       title: "首页",
       icon: <AppOutline />,
-    },
-    {
-      name: "Category",
-      title: "分类",
-      icon: <UnorderedListOutline />,
     },
     {
       name: "About",

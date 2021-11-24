@@ -1,16 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { List, InfiniteScroll } from "antd-mobile";
 import { ContentType } from "../../consts/poems";
-import { ScrollView } from "react-native";
+import { ScrollView, DeviceEventEmitter } from "react-native";
 import { sleep } from "antd-mobile/es/utils/sleep";
 
 let count = 0;
 
 export default function PoetryType({ route, navigation }) {
-  const [allContent] = useState(route.params.content || route.params.children);
+  const [allContent, setAllCotent] = useState(
+    route.params.content || route.params.children
+  );
   const [data, setData] = useState<ContentType>(allContent.slice(0, 20));
   const [hasMore, setHasMore] = useState(true);
+
+  useEffect(() => {
+    DeviceEventEmitter.emit("setLayoutTitle", route.params.title);
+    const content = route.params.content || route.params.children;
+    setAllCotent(content);
+    setData(content.slice(0, 20));
+  }, [route]);
 
   async function mockRequest() {
     await sleep(500);
@@ -30,9 +39,13 @@ export default function PoetryType({ route, navigation }) {
     if (!route.params.content) {
       if (Array.isArray(item.content)) {
         content = item.content;
-      } else {
+      } else if (item.content instanceof Object) {
         content = item.content.content || item.content.paragraphs || [];
       }
+    }
+    if (item.name) {
+      content = item.desc;
+      title = item.name;
     }
     navigation.navigate("Poetry", { title, content });
   }
@@ -47,7 +60,7 @@ export default function PoetryType({ route, navigation }) {
               go(item);
             }}
           >
-            {item.title || item.chapter}
+            {item.title || item.chapter || item.author || item.name}
           </List.Item>
         ))}
       </List>

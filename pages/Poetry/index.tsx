@@ -6,18 +6,25 @@ export default function PoetryComp({ route, navigation }) {
   const title = route.params.title;
   const content = route.params.content;
 
-  if (content instanceof Array && typeof content[0] === "string") {
+  if (
+    (content instanceof Array && typeof content[0] !== "object") ||
+    typeof content === "string"
+  ) {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>{title}</Text>
         <ScrollView>
-          <View style={styles.content}>
-            {content.map((value, index) => (
-              <Text style={styles.text} key={index}>
-                {value}
-              </Text>
-            ))}
-          </View>
+          {content instanceof Array ? (
+            <View style={styles.content}>
+              {content.map((value, index) => (
+                <Text style={styles.text} key={index}>
+                  {value}
+                </Text>
+              ))}
+            </View>
+          ) : (
+            <Text style={styles.content}>{content}</Text>
+          )}
         </ScrollView>
       </View>
     );
@@ -30,17 +37,23 @@ const styles = StyleSheet.create({
   container: {
     paddingBottom: 20,
     height: "100%",
-    backgroundColor: "#eaeaea",
+    backgroundColor: "#efefef",
   },
   content: {
     paddingLeft: 20,
     paddingRight: 20,
+    textAlign: "center",
+    fontSize: 20,
+    lineHeight: 40,
   },
   title: {
     textAlign: "center",
     margin: 15,
+    fontSize: 30,
   },
   text: {
     textAlign: "center",
+    fontSize: 20,
+    lineHeight: 40,
   },
 });
