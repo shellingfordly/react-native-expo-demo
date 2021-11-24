@@ -1,17 +1,23 @@
-# Expo Demo
+# React Native Expo Demo
 
-中文|[English](https://github.com/shellingfordly/react-native-expo-demo/blob/master/README_EN.md)
+这是一个为了学习 React Native 而做的诗歌软件，它只是一个 Demo，仅仅是为了学习，使用 Expo 初始化项目，数据来源 Github 仓库[chinese-poetry](https://github.com/anncwb/vue-vben-admin)，
 
-这是一个为了学习 Expo 而做的诗歌软件，它只是一个 Demo
+## 下载
 
-## run
+```
+git clone https://github.com/shellingfordly/react-native-expo-demo.git
+```
+
+## 运行
 
 ```
 yarn dev
 ```
 
-web open http://localhost:19006/
+- 打开 http://localhost:19002/
+- 选择 Run in web browser
+- 打开 http://localhost:19006/进行预览
 
-## Related warehouse
+## 贡献
 
 - [chinese-poetry](https://github.com/anncwb/vue-vben-admin) 最全中文诗歌古典文集数据库
