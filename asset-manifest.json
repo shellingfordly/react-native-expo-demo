@@ -1,0 +1,38 @@
+{
+  "files": {
+    "app.js": "/static/js/app.4f6c7d77.chunk.js",
+    "app.js.map": "/static/js/app.4f6c7d77.chunk.js.map",
+    "runtime~app.js": "/static/js/runtime~app.2e9f1821.js",
+    "runtime~app.js.map": "/static/js/runtime~app.2e9f1821.js.map",
+    "static/js/2.1add2181.chunk.js": "/static/js/2.1add2181.chunk.js",
+    "static/js/2.1add2181.chunk.js.map": "/static/js/2.1add2181.chunk.js.map",
+    "favicon-16.png": "/favicon-16.png",
+    "favicon-32.png": "/favicon-32.png",
+    "favicon.ico": "/favicon.ico",
+    "index.html": "/index.html",
+    "manifest.json": "/manifest.json",
+    "serve.json": "/serve.json",
+    "static/js/2.1add2181.chunk.js.LICENSE.txt": "/static/js/2.1add2181.chunk.js.LICENSE.txt",
+    "static/media/author.svg": "/static/media/author.9053e29f.svg",
+    "static/media/busy.svg": "/static/media/busy.c4668539.svg",
+    "static/media/caocao.svg": "/static/media/caocao.57a5f5ad.svg",
+    "static/media/chuci.svg": "/static/media/chuci.b7ea9d03.svg",
+    "static/media/default.svg": "/static/media/default.1f281972.svg",
+    "static/media/disconnected.svg": "/static/media/disconnected.9c7ea75e.svg",
+    "static/media/empty.svg": "/static/media/empty.f2b844b2.svg",
+    "static/media/lunyu.svg": "/static/media/lunyu.1637b9dc.svg",
+    "static/media/mengxue.svg": "/static/media/mengxue.ee9ca594.svg",
+    "static/media/shijing.svg": "/static/media/shijing.d9e7036f.svg",
+    "static/media/sishuwujing.svg": "/static/media/sishuwujing.e7e5ff55.svg",
+    "static/media/slider-thumb.svg": "/static/media/slider-thumb.3d161c84.svg",
+    "static/media/songci.svg": "/static/media/songci.d9476dff.svg",
+    "static/media/spin.svg": "/static/media/spin.a71ffb17.svg",
+    "static/media/tangshi.svg": "/static/media/tangshi.eb972fb3.svg",
+    "static/media/yuanqu.svg": "/static/media/yuanqu.1674ac93.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.2e9f1821.js",
+    "static/js/2.1add2181.chunk.js",
+    "static/js/app.4f6c7d77.chunk.js"
+  ]
+}
