@@ -2,6 +2,11 @@
 
 这是一个为了学习 React Native 而做的诗歌软件，它只是一个 Demo，仅仅是为了学习，使用 Expo 初始化项目，数据来源 Github 仓库[chinese-poetry](https://github.com/anncwb/vue-vben-admin)，
 
+## 预览
+
+[地址](http://106.54.183.217:8082/)
+
+
 ## 下载
 
 ```
